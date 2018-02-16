@@ -1,49 +1,52 @@
-.splash-screen {
-  .splash-banner {
-    height: 60vh;
-    position: relative;
-    width: 100%;
-     .splash-image {
-      height: inherit;
-      background-image: url("./photos/HomePage/splash.jpg");
-      background-repeat: no-repeat;
-      background-size: cover;
-      img {
-        position: absolute;
-        overflow: hidden;
-      }
-     }
-     .over-image {
-       position: absolute;
-       top: 20vh;
-       right: 30%;
-       width: 100%;
-       color: white;
-       .demo-reel-button {
-         background-color: #E72828;
-       }
-       h2 {
-         font-size: 72px;
-       }
-     }
-  }
-
-  .splash-text {
-    display: flex;
-    justify-content: center;
-    padding-top: 1%;
-    p {
-      width: 80%;
-      font-size: 30px;
-    }
-  }
+.carousel {
+  width: 80%;
 }
-.carousels {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  .home-portfolios {
-    height:100px;
-    width: 100px;
-  }
-}
+// .splash-screen {
+//   .splash-banner {
+//     height: 60vh;
+//     position: relative;
+//     width: 100%;
+//      .splash-image {
+//       height: inherit;
+//       background-image: url("./assets/photos/HomePage/splash.jpg");
+//       background-repeat: no-repeat;
+//       background-size: cover;
+//       img {
+//         position: absolute;
+//         overflow: hidden;
+//       }
+//      }
+//      .over-image {
+//        position: absolute;
+//        top: 20vh;
+//        right: 30%;
+//        width: 100%;
+//        color: white;
+//        .demo-reel-button {
+//          background-color: #E72828;
+//        }
+//        h2 {
+//          font-size: 72px;
+//        }
+//      }
+//   }
+//
+//   .splash-text {
+//     display: flex;
+//     justify-content: center;
+//     padding-top: 1%;
+//     p {
+//       width: 80%;
+//       font-size: 30px;
+//     }
+//   }
+// }
+// .carousels {
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-around;
+//   .home-portfolios {
+//     height:100px;
+//     width: 100px;
+//   }
+// }
