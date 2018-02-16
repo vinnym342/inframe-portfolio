@@ -1,5 +1,23 @@
-.carousel {
+.carousel-container {
   width: 80%;
+  padding: 50px;
+}
+.hompage-component {
+  display: flex;
+  flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+.videos {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  .video {
+    video {
+      width: 100%    !important;
+      height: auto   !important;
+    }
+  }
 }
 // .splash-screen {
 //   .splash-banner {

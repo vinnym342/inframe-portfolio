@@ -1,5 +1,20 @@
-.carousel {
-  width: 80%; }
+.carousel-container {
+  width: 80%;
+  padding: 50px; }
+
+.hompage-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.videos {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  .videos .video video {
+    width: 100%    !important;
+    height: auto   !important; }
 
 
 * {
@@ -8,11 +23,9 @@
 .nav-bar {
   background-color: black;
   width: 100%;
-  height: 20vh;
+  height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .nav-bar .logo {
-    width: 25%; }
-    .nav-bar .logo img {
-      width: 100%; }
+  .nav-bar .logo img {
+    max-height: 100%; }

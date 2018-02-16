@@ -18,6 +18,8 @@ const surfer1 = require("../../assets/photos/Portfolio/surf/1.jpg")
 const surfer2 = require("../../assets/photos/Portfolio/surf/2.jpg")
 const surfer3 = require("../../assets/photos/Portfolio/surf/3.jpg")
 
+const vid1 = require("../../assets/videos/HomePage/1.mp4")
+
 // const URL = process.env.REACT_APP_PUBLIC_URL
 
 class HomePage extends Component {
@@ -92,7 +94,7 @@ class HomePage extends Component {
     )
     const carouselId = "carousel" + index.toString()
       return (
-        <div id={carouselId} class="carousel slide" data-ride="carousel">
+        <div className="carousel-container"><div id={carouselId} class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target={"#" + carouselId} data-slide-to="0" class="active"></li>
           <li data-target={"#" + carouselId} data-slide-to="1"></li>
@@ -102,14 +104,14 @@ class HomePage extends Component {
         {slides}
       </div>
       <a class="carousel-control-prev" href={"#" + carouselId} role="button" data-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
       </a>
       <a class="carousel-control-next" href={"#" + carouselId} role="button" data-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
       </a>
-    </div>
+    </div></div>
     )
     }
     )
@@ -125,7 +127,7 @@ const ellipse4 = require("../../assets/photos/HomePage/dots/Ellipse4.png")
 
     return (
       [
-        <div className="splash-screen">
+        <div className="hompage-component splash-screen">
           <div className="splash-banner">
             <div className="splash-image">
             </div>
@@ -141,36 +143,44 @@ const ellipse4 = require("../../assets/photos/HomePage/dots/Ellipse4.png")
             <p>InFrame Media Productions is a full service video production company and creative agency specializing in corporate, marketing, training, event and web viral videos located in Gold Coast Australia.</p>
           </div>
         </div>
-        ,<div className="production-portfolio">
+        ,<div className="hompage-component production-portfolio">
         <h1>Production Portfolio</h1>
         <Line/>
-        <Line/>
-        <Line/>
-        <Line/>
-        <Line/>
-        <Line/>
         {carousels}
-        {/*4 vids*/}
+        <div className="videos">
+        <div style={{maxWidth: '80%'}} className="video">
+          <video controls>
+            <source src={vid1} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div style={{maxWidth: '80%'}} className="video">
+          <video controls>
+            <source src={vid1} type="video/mp4"/>
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        </div>
         <Button
         primary={true}
         label="View our portfolio"/>
         </div>,
-      <div className="process">
+      <div className="hompage-component process">
       <div className="ellipse-container">
         <div className="elipses">
-          <img src={ellipse} alt="ellipse"/>
+{/*          <img src={ellipse} alt="ellipse"/>
           <img src="" alt="Arrow"/>
           <img src={ellipse2} alt="ellipse2"/>
           <img src="" alt="Arrow"/>
           <img src={ellipse3} alt="ellipse3"/>
           <img src="" alt="Arrow"/>
-          <img src={ellipse4} alt="ellipse4"/>
-        </div>,
-        <Button
-        primary={true}
-        label="READ MORE" />
+          <img src={ellipse4} alt="ellipse4"/>*/}
+        </div>
       </div>
       <h4>InFrame Media Productions is a local Gold Coast business working on a national scale, to provide even the smallest companies world class imagery.</h4>
+      <Button
+      primary={true}
+      label="READ MORE" />
       </div>,
       <div className="about">
       <p>{`We want you to think of us as your in-house video production company Whether you need a web commercial, event video, corporate media communications, employee stories, testimonial customer stories, explainer video, motion graphics or coverage of live events, InFrame Media will work with you to develop and produce engaging content that successfully connects with your audience.
@@ -179,7 +189,7 @@ The heart of what we do is story telling. We’ve been doing what we love since 
 
 We work closely with your marketing team to help launch your company or product/s to differentiate you from your competitors. We believe that InFrame Media has a special blend of unique creativity, story telling and collaborative approach.`}
 </p></div>,
-<div className="testimonial">
+<div className="hompage-component testimonial">
 <h4>Video Production Services  -  Client Testimonials</h4>
 <div id="carouselExampleControls" style={{backgroundColor: '#333333'}} class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
