@@ -7,7 +7,7 @@ import MoreVertIcon from 'material-ui/svg-icons/navigation/menu';
 const logo = require('./../../assets/photos/NavBar/logo.jpg')
 const NavBar = () => (
   <div className='nav-bar'>
-    <div className="logo"><img src={logo} alt="inframe-logo"/></div>
+    <img src={logo} alt="inframe-logo"/>
     <IconMenu
           iconButtonElement={<IconButton style={{height: '50px', width: '50px'}}><MoreVertIcon color={'white'}/></IconButton>}
         >

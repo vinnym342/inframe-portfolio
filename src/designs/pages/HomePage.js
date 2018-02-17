@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
-import Slider from '../molecules/Carousel';
 import Line from '../atoms/Line';
 
 import Button from 'material-ui/RaisedButton';
 
 // Production Portfolio
+
+const splashPhoto = require("../../assets/photos/HomePage/splash.jpg")
 
 const animal1 = require("../../assets/photos/Portfolio/animals/w400-520089B2cH8Gd4.jpg")
 const animal2 = require("../../assets/photos/Portfolio/animals/w400-520089GB5uf4KD.jpg")
@@ -122,16 +123,12 @@ const ellipse2 = require("../../assets/photos/HomePage/dots/Ellipse2.png")
 const ellipse3 = require("../../assets/photos/HomePage/dots/Ellipse3.png")
 const ellipse4 = require("../../assets/photos/HomePage/dots/Ellipse4.png")
 
-
-
-
     return (
       [
-        <div className="hompage-component splash-screen">
+        <div className="splash-screen">
           <div className="splash-banner">
-            <div className="splash-image">
-            </div>
-            <div className='over-image'>
+            <img className="splash-photo" src={splashPhoto} alt="splash-photo"/>
+            <div className="button">
               <h2><b>Let us tell your story</b></h2>
               <Button
               primary={true}
@@ -139,7 +136,7 @@ const ellipse4 = require("../../assets/photos/HomePage/dots/Ellipse4.png")
               label='SEE OUR DEMO REEL'/>
             </div>
           </div>
-          <div className="splash-text">
+          <div className="text">
             <p>InFrame Media Productions is a full service video production company and creative agency specializing in corporate, marketing, training, event and web viral videos located in Gold Coast Australia.</p>
           </div>
         </div>
@@ -194,16 +191,40 @@ We work closely with your marketing team to help launch your company or product/
 <div id="carouselExampleControls" style={{backgroundColor: '#333333'}} class="carousel slide" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <p style={{width: '40%',float: 'left'}}>dfhyj</p>
-      <p style={{width: '40%',float: 'right'}}>dfgh</p>
+      <p style={{width: '40%',float: 'left'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
+      <p style={{width: '40%',float: 'right'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
     </div>
     <div class="carousel-item">
-    <p style={{width: '40%',float: 'left'}}>dfhyj</p>
-    <p style={{width: '40%',float: 'right'}}>dfgh</p>
+    <p style={{width: '40%',float: 'left'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
+    <p style={{width: '40%',float: 'right'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
     </div>
     <div class="carousel-item">
-    <p style={{width: '40%',float: 'left'}}>dfhyj</p>
-    <p style={{width: '40%',float: 'right'}}>dfgh</p>
+    <p style={{width: '40%',float: 'left'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
+    <p style={{width: '40%',float: 'right'}}>{`
+"Studio B, That band of amazing misfits. We’ve produced literally hundreds of stratospherically successful motion graphics and live action videos together. From documentary films, demos and product tours, high end animated video, we even shot the first augmented reality music video together. They seriously kill every project we’ve ever thrown at them.
+
+AJ Joseph
+Executive Creative Director - Adobe`}</p>
     </div>
   </div>
   <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">

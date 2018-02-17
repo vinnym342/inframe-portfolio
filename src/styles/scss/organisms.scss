@@ -33,14 +33,12 @@
 // }
 .nav-bar {
   background-color: black;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  .logo {
     img {
       max-height: 100%;
     }
-  }
 }

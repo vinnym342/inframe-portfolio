@@ -1,12 +1,35 @@
-.carousel-container {
-  width: 80%;
-  padding: 50px; }
-
 .hompage-component {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+
+.splash-screen {
+  width: 100%;
+  height: 60vh; }
+  .splash-screen .splash-banner {
+    width: 100%;
+    height: 60%;
+    overflow: hidden;
+    position: relative; }
+    .splash-screen .splash-banner .splash-photo {
+      left: 0;
+      position: absolute;
+      height: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      min-width: 100%; }
+    .splash-screen .splash-banner .button {
+      color: white;
+      left: 5%;
+      position: absolute;
+      top: 40%; }
+  .splash-screen .text {
+    padding-top: 10%; }
+
+.carousel-container {
+  width: 80%;
+  padding: 50px; }
 
 .videos {
   display: flex;
@@ -20,12 +43,16 @@
 * {
   font-family: 'Advent Pro', sans-serif; }
 
+html {
+  height: 100%;
+  width: 100%; }
+
 .nav-bar {
   background-color: black;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
-  .nav-bar .logo img {
+  .nav-bar img {
     max-height: 100%; }
